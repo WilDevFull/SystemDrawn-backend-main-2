@@ -1,0 +1,37 @@
+{
+  "name": "systemdrawn-api",
+  "version": "1.0.0",
+  "description": "API Backend para o projeto SystemDrawn",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "migrate": "node src/database/migrate.js",
+    "test": "jest",
+    "gerar-membros": "node scripts/gerar-bases-membros.js",
+    "definir-admin": "node scripts/definir-admin.js"
+  },
+  "dependencies": {
+    "@gradio/client": "^2.7.1",
+    "@huggingface/inference": "^4.13.32",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.3",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "babel-jest": "^30.4.1",
+    "jest": "^30.4.2",
+    "nodemon": "^1.14.10"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
